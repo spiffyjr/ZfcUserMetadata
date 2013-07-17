@@ -1,0 +1,8 @@
+<h1><?php echo $this->identity()->getEmail() ?></h1>
+
+<h3>Metadata</h3>
+<ul>
+<?php foreach ($this->plugin('zfcUserExtension')->get('metadata')->getMetadata($this->identity()) as $key => $value) : ?>
+    <li><?php echo $key; ?>: <?php echo $value; ?></li>
+<?php endforeach; ?>
+</ul>

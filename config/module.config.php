@@ -18,6 +18,12 @@ return array(
 
     'service_manager' => include 'service.config.php',
 
+    'view_manager' => array(
+        'template_map' => array(
+            'zfc-user/user/index' => __DIR__ . '/../view/zfc-user/user/index.phtml',
+        )
+    ),
+
     'zfc_user' => array(
         'extensions' => array(
             'metadata' => array(
@@ -27,5 +33,5 @@ return array(
 
             'metadata_doctrine' => 'ZfcUserMetadata\DoctrineExtension'
         )
-    )
+    ),
 );
