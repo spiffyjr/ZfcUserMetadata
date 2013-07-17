@@ -1,0 +1,13 @@
+{
+    "name": "zf-commons/zfc-user-metadata",
+    "require": {
+        "php": ">=5.3.3",
+        "zf-commons/zfc-user": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "ZfcUserMetadata": "src/",
+            "ZfcUserMetadataTest": "test/"
+        }
+    }
+}
